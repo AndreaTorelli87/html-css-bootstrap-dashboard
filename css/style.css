@@ -1,7 +1,4 @@
 *{
-   padding: 0;
-   margin: 0;
-   box-sizing: border-box;
    font-family: sans-serif;
 }
 
@@ -14,6 +11,12 @@
 #logo, .ms_hidden{
    display: none;
 }
+
+.ms_border_left{
+   
+}
+
+/* https://getbootstrap.com/docs/5.3/utilities/display/#hiding-elements */
 
 .bi-bell-fill{
    color: #FF8F00;
