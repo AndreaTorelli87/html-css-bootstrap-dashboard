@@ -5,3 +5,70 @@
    font-family: sans-serif;
 }
 
+header{
+   background-color: blue; /* ----------------------------------- */
+   height: 5rem;
+}
+
+main{
+   height: calc(100vh - 5rem);
+   background-color: #051E34;
+}
+
+aside{
+   background-image: url(../img/sidebar-bg.png);
+   width: 3rem;
+   min-height: 15rem;
+   /* height: 100%; */
+}
+
+#aside-top{
+   height: calc(100% - 5rem);
+   background-color: aqua;           /* ----------------------------------- */
+
+}
+
+#aside-bottom{
+   height: 5rem;
+   background-color: yellowgreen;           /* ----------------------------------- */
+}
+
+#corpo{
+   width: calc(100% - 3rem); 
+   overflow-y: scroll;
+   background-color: crimson;
+}
+
+#top-bar{
+   height: 8rem;
+   background-color: #1B72E8;
+}
+
+
+
+
+
+/* ----- SCHERMI S ----- */
+@media screen and (min-width: 768px){
+     
+  
+}
+
+/* ----- SCHERMI MD ----- */
+@media screen and (min-width: 992px){
+
+ 
+}
+
+/* ----- SCHERMI LG ----- */
+@media screen and (min-width: 1200px){
+
+   aside{
+      width: 9rem;
+   }
+   
+   #corpo{
+      width: calc(100% - 9rem); 
+   }
+   
+}
