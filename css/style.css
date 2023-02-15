@@ -18,14 +18,11 @@ main{
 aside{
    background-image: url(../img/sidebar-bg.png);
    width: 3rem;
-   min-height: 15rem;
-   /* height: 100%; */
 }
 
 #aside-top{
    height: calc(100% - 5rem);
    background-color: aqua;           /* ----------------------------------- */
-
 }
 
 #aside-bottom{
@@ -33,10 +30,10 @@ aside{
    background-color: yellowgreen;           /* ----------------------------------- */
 }
 
-#corpo{
+#dashboard{
    width: calc(100% - 3rem); 
    overflow-y: scroll;
-   background-color: crimson;
+   background-color: crimson;           /* ----------------------------------- */
 }
 
 #top-bar{
@@ -50,7 +47,10 @@ aside{
 
 /* ----- SCHERMI S ----- */
 @media screen and (min-width: 768px){
-     
+
+   #nuovo-studente{
+      order: 5;
+   }
   
 }
 
@@ -69,6 +69,10 @@ aside{
    
    #corpo{
       width: calc(100% - 9rem); 
+   }
+
+   aside span{
+      display: inline-block;
    }
    
 }
