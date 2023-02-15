@@ -5,6 +5,8 @@
    font-family: sans-serif;
 }
 
+/*------ HEADER ------*/
+
 #logo_mob img{
    height: 2.4rem;
 }
@@ -16,32 +18,47 @@
 .bi-bell-fill{
    color: #FF8F00;
 }
+/*------ MAIN ------*/
 
 main{
    height: calc(100vh - 4rem);
    background-color: #051E34;
 }
 
+/*------ ASIDE ------*/
+
 aside{
    background-image: url(../img/sidebar-bg.png);
-   width: 3rem;
+   width: 4rem;
+   padding: 2rem 1rem;
 }
 
 #aside-top{
-   height: calc(100% - 5rem);
-   background-color: aqua;           /* ----------------------------------- */
+   min-height: 7rem;
 }
 
-#aside-bottom{
-   height: 5rem;
-   background-color: yellowgreen;           /* ----------------------------------- */
+aside a{
+   color: white;
+   text-decoration: none;
 }
+
+aside i{
+   font-size: 25px;
+}
+
+aside span{
+   display: inline-block;
+   vertical-align: middle;
+}
+
+/*------ DASHBOARD ------*/
 
 #dashboard{
    width: calc(100% - 3rem); 
-   overflow-y: scroll;
    background-color: crimson;           /* ----------------------------------- */
 }
+
+/*------ TOP-BAR ------*/
 
 #top-bar{
    height: 8rem;
