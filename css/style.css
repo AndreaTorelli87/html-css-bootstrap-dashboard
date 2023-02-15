@@ -5,13 +5,20 @@
    font-family: sans-serif;
 }
 
-header{
-   background-color: blue; /* ----------------------------------- */
-   height: 5rem;
+#logo_mob img{
+   height: 2.4rem;
+}
+
+#logo, .ms_hidden{
+   display: none;
+}
+
+.bi-bell-fill{
+   color: #FF8F00;
 }
 
 main{
-   height: calc(100vh - 5rem);
+   height: calc(100vh - 4rem);
    background-color: #051E34;
 }
 
@@ -62,6 +69,14 @@ aside{
 
 /* ----- SCHERMI LG ----- */
 @media screen and (min-width: 1200px){
+
+   #logo_mob{
+      display: none;
+   }
+   
+   #logo, .ms_hidden{
+      display: inline-block;
+   }
 
    aside{
       width: 9rem;
