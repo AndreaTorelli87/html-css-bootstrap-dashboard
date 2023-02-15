@@ -13,7 +13,7 @@
 }
 
 .ms_border_left{
-   
+
 }
 
 /* https://getbootstrap.com/docs/5.3/utilities/display/#hiding-elements */
@@ -33,16 +33,17 @@ main{
 aside{
    background-image: url(../img/sidebar-bg.png);
    width: 4rem;
-   padding: 2rem 1rem;
 }
 
 #aside-top{
-   min-height: 7rem;
+   min-height: 9rem;
 }
 
-aside a{
-   color: white;
-   text-decoration: none;
+#aside-top a, #aside-bottom a{
+   border: none;
+   border-radius: 0;
+   width: 100%;
+   text-align: left;
 }
 
 aside i{
@@ -50,8 +51,7 @@ aside i{
 }
 
 aside span{
-   display: inline-block;
-   vertical-align: middle;
+   vertical-align: text-bottom;
 }
 
 /*------ DASHBOARD ------*/
@@ -64,16 +64,25 @@ aside span{
 /*------ TOP-BAR ------*/
 
 #top-bar{
-   height: 8rem;
    background-color: #1B72E8;
 }
 
+#nuovo-studente .ms_offcanvas{
+   width: 90%;
+}
 
+#boolean-piano .badge{
+   background-color: #165BBA;
+}
 
 
 
 /* ----- SCHERMI S ----- */
 @media screen and (min-width: 768px){
+
+   #top-bar{
+      height: 8rem;
+   }
 
    #nuovo-studente{
       order: 5;
@@ -84,13 +93,16 @@ aside span{
 /* ----- SCHERMI MD ----- */
 @media screen and (min-width: 992px){
 
+   #nuovo-studente .ms_offcanvas{
+      width: 50%;
+   }
  
 }
 
 /* ----- SCHERMI LG ----- */
 @media screen and (min-width: 1200px){
 
-   #logo_mob{
+   #logo_mob, .ms_plus{
       display: none;
    }
    
