@@ -12,11 +12,9 @@
    display: none;
 }
 
-.ms_border_left{
-
+.ms_bg_search{
+   background-color: #E5E5E5;
 }
-
-/* https://getbootstrap.com/docs/5.3/utilities/display/#hiding-elements */
 
 .bi-bell-fill{
    color: #FF8F00;
@@ -27,6 +25,7 @@ main{
    height: calc(100vh - 4rem);
    background-color: #051E34;
 }
+
 
 /*------ ASIDE ------*/
 
@@ -58,7 +57,6 @@ aside span{
 
 #dashboard{
    width: calc(100% - 3rem); 
-   background-color: crimson;           /* ----------------------------------- */
 }
 
 /*------ TOP-BAR ------*/
@@ -68,39 +66,69 @@ aside span{
 }
 
 #nuovo-studente .ms_offcanvas{
-   width: 90%;
+   width: 100%;
 }
 
 #boolean-piano .badge{
    background-color: #165BBA;
 }
 
+#boolean-piano .badge:hover{
+   background-color: #114286;
+   cursor: pointer;
+}
 
+/*------ PROSSIME CLASSI ------*/
+
+td img{
+   height: 2rem;
+   border-radius: 50%;
+}
+
+.ms_table_text td{
+   width: 5rem;
+   white-space: nowrap;
+}
+
+.ms_table_text tr td:first-child, .ms_table_text tr th:first-child {
+   text-align: left;
+}
+
+.ms_table_text tr td:nth-child(2), .ms_table_text tr th:nth-child(2) {
+   display: none;
+}
+
+.ms_table_text tr td:nth-child(3), .ms_table_text tr th:nth-child(3) {
+   display: none;
+}
 
 /* ----- SCHERMI S ----- */
 @media screen and (min-width: 768px){
 
-   #top-bar{
-      height: 8rem;
-   }
-
    #nuovo-studente{
       order: 5;
    }
-  
+   
+   .ms_table_text tr td:nth-child(3), .ms_table_text tr th:nth-child(3) {
+      display: table-cell;
+   }
+
+   .ms_table_text tr td:first-child, .ms_table_text tr th:first-child {
+      text-align: left;
+      width: auto;
+   }
+}
+
+/*------ BREACKPOINT CUSTOM ------*/
+@media screen and (min-width: 847px){
+
+   .ms_table_text tr td:nth-child(2), .ms_table_text tr th:nth-child(2) {
+      display: table-cell;
+   }
 }
 
 /* ----- SCHERMI MD ----- */
 @media screen and (min-width: 992px){
-
-   #nuovo-studente .ms_offcanvas{
-      width: 50%;
-   }
- 
-}
-
-/* ----- SCHERMI LG ----- */
-@media screen and (min-width: 1200px){
 
    #logo_mob, .ms_plus{
       display: none;
@@ -110,16 +138,15 @@ aside span{
       display: inline-block;
    }
 
-   aside{
-      width: 9rem;
-   }
-   
-   #corpo{
-      width: calc(100% - 9rem); 
-   }
-
    aside span{
       display: inline-block;
    }
-   
+
+   aside{
+      width: 9rem;
+   } 
+
+   #nuovo-studente .ms_offcanvas{
+      width: 50%;
+   }
 }
